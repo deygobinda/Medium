@@ -1,0 +1,7 @@
+name = "backend"
+compatibility_date = "2024-07-25"
+
+[vars]
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiMWY1ZGNiYzktOTFlOC00ZGU4LWFlZjEtNjcyMzc3NmQwODU0IiwidGVuYW50X2lkIjoiN2ZhMDdmNDcyNTk0ZjY5M2Q0ODAxOTQxMmYxY2MwODA1MTNkZTI5MWI1ZThmMzg3N2FiZDdjZjhlNWNmNjM4NiIsImludGVybmFsX3NlY3JldCI6IjA5ZWIyNDU0LWRjMGEtNDYyOS04MDBmLWM4NGUwYzhhNDYyMCJ9.EOkRf-xX8F4i7uqzWOJC0TtTIaAQ46_nqs46YhL20xM"
+
+MY_SECRET = "deygobina"

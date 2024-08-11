@@ -46,7 +46,7 @@ export const BlogCard = ({
 export function Avater({ name, size = 5 }: { name: string, size?: number }) {
   return (
     <div
-      className={`relative inline-flex items-center justify-center w-${size} h-${size} overflow-hidden bg-gray-500 rounded-full`}
+      className={`relative inline-flex items-center justify-center w-${size} h-${size} p-5 overflow-hidden bg-gray-500 rounded-full`}
     >
       <span className="text-xs text-gray-200">{name[0]}</span>
     </div>

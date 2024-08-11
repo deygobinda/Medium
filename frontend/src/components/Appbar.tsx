@@ -5,7 +5,7 @@ export const Appbar = () => {
   return (
     <div className=" border-b flex  justify-between px-10 py-4">
       <Link to={"/blogs"}>Medium</Link>
-      <div className="">
+      <div className="flex">
         <Link to={"/publish"}>
           <button
             type="button"
@@ -15,7 +15,7 @@ export const Appbar = () => {
           </button>
         </Link>
         <div>
-        <Avater name="Gobinda" size={7} />
+          <Avater name="Gobinda" size={7} />
         </div>
       </div>
     </div>

@@ -14,7 +14,9 @@ export const Appbar = () => {
             New
           </button>
         </Link>
+        <div>
         <Avater name="Gobinda" size={7} />
+        </div>
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ export interface Blog {
   author: {
     name: string;
   };
+  date : string
 }
 
 export const useBlogs = () => {

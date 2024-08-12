@@ -33,7 +33,7 @@ export const Blogs = () => {
               authorName={blog.author.name || "Anonymous"}
               title={blog.title}
               content={blog.content}
-              publishDate="10/08/28"
+              publishDate={blog.date.slice(0,10)}
             />
           ))}
         </div>

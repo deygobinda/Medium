@@ -11,7 +11,7 @@ export const FullBlog = ({ blog }: { blog: Blog }) => {
           <div className="col-span-8">
             <div className="text-5xl font-extrabold">{blog.title}</div>
             <div className="text-slate-500 pt-4">
-              Posted on 2nd December 2023
+              {blog.date.slice(0,10)}
             </div>
             <div className="pt-4">{blog.content}</div>
           </div>

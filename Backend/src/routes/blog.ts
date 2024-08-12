@@ -118,7 +118,8 @@ blogRouter.get("/bulk", async (c) => {
           select : {
             name : true
           }
-        }
+        },
+        date : true
       }
     });
 
@@ -147,7 +148,8 @@ blogRouter.get("/:id", async (c) => {
           select : {
             name : true
           }
-        }
+        },
+        date:true
       }
     });
     return c.json({

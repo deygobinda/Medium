@@ -3,6 +3,8 @@ import axios from "axios";
 import { ChangeEvent, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { BACKEND_URL } from "../config";
+import { useSetRecoilState } from "recoil";
+import { authorName } from "../store";
 
 export const Auth = ({ type }: { type: "signup" | "signin" }) => {
   const [inputs, setInputs] = useState<SignupInput>({
@@ -11,12 +13,14 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
     password: "",
   });
   const navigate = useNavigate();
+  const setName = useSetRecoilState(authorName)
 
   async function sendRequest(){
    try{
     const res = await  axios.post(`${BACKEND_URL}/api/v1/user/${type == "signup" ? "signup" : "signin"}`,inputs);
     const jwt = res.data.jwt;
     localStorage.setItem("token",jwt)
+    setName(inputs.name || "Anonymous")
     navigate("/blogs")
    }catch(e){
     alert("Some thig went while login")

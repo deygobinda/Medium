@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import { Avater } from "./BlogCard";
+import { useRecoilValue } from "recoil";
+import { authorName } from "../store";
 
 export const Appbar = () => {
+
+  const name = useRecoilValue(authorName)
+
   return (
     <div className=" border-b flex  justify-between px-10 py-4">
       <Link to={"/blogs"}>Medium</Link>
@@ -15,7 +20,7 @@ export const Appbar = () => {
           </button>
         </Link>
         <div>
-          <Avater name="Gobinda" size={7} />
+          <Avater name={name} size={7} />
         </div>
       </div>
     </div>
